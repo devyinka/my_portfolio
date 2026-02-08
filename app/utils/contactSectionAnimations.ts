@@ -10,7 +10,7 @@ const emailAnimation = () => {
         opacity: [0, 0.2, 0.8, 1],
         transform: ["translateX(-100px) ", "none"],
       },
-      { duration: 0.5, delay: 0.1 }
+      { duration: 0.5, delay: 0.1 },
     );
   });
 };
@@ -25,7 +25,7 @@ const linkedInAnimation = () => {
         opacity: [0, 0.2, 0.8, 1],
         transform: ["translateX(-100px) ", "none"],
       },
-      { duration: 0.5, delay: 0.2 }
+      { duration: 0.5, delay: 0.2 },
     );
   });
 };
@@ -40,10 +40,40 @@ const githubAnimation = () => {
         opacity: [0, 0.2, 0.8, 1],
         transform: ["translateY(-100px) ", "none"],
       },
-      { duration: 0.5, delay: 0.3 }
+      { duration: 0.5, delay: 0.3 },
     );
   });
 };
+const whatsappAnimation = () => {
+  const whatsappCard = document.querySelectorAll(".whatsappCard");
+
+  inView(whatsappCard, () => {
+    animate(
+      whatsappCard,
+      {
+        opacity: [0, 0.2, 0.8, 1],
+        transform: ["translateX(-100px) ", "none"],
+      },
+      { duration: 0.5, delay: 0.3 },
+    );
+  });
+};
+
+const xAnimation = () => {
+  const xCard = document.querySelectorAll(".xCard");
+
+  inView(xCard, () => {
+    animate(
+      xCard,
+      {
+        opacity: [0, 0.2, 0.8, 1],
+        transform: ["translateX(100px) ", "none"],
+      },
+      { duration: 0.5, delay: 0.4 },
+    );
+  });
+};
+
 const formAnimation = () => {
   const form = document.querySelectorAll(".form");
 
@@ -54,7 +84,7 @@ const formAnimation = () => {
         opacity: [0, 0.2, 0.8, 1],
         transform: ["translateY(100px) ", "none"],
       },
-      { duration: 0.5, delay: 0.5 }
+      { duration: 0.5, delay: 0.5 },
     );
   });
 };
@@ -65,10 +95,14 @@ const mobileAnimation = () => {
   });
 };
 
-export default {
+const contactAnimations = {
   emailAnimation,
   githubAnimation,
   linkedInAnimation,
+  whatsappAnimation,
+  xAnimation,
   formAnimation,
   mobileAnimation,
 };
+
+export default contactAnimations;

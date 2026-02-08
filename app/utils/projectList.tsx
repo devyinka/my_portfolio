@@ -1,5 +1,4 @@
 import {
-  AntdSVG,
   CSSSVG,
   ExpressSVG,
   JavascriptSVG,
@@ -8,10 +7,10 @@ import {
   MongooseSVG,
   PrimeReactSVG,
   ReactHookFormSVG,
+  ReactnativeSVG,
   ReactSVG,
   SassSVG,
-  ShadcnLandingSVG,
-  ShadcnSVG,
+  SmartAttendanceSVG,
   ShopApiSVG,
   Sk8terSVG,
   SwaggerSVG,
@@ -24,288 +23,92 @@ import { NextSVG } from "../components/ui/icons/index";
 
 export const ProjectList: ProjectType[] = [
   {
-    icon: <ShadcnLandingSVG />,
-    title: "Shadcn/Vue Landing page",
+    icon: <SmartAttendanceSVG />,
+    title: "Smart QR Event Logistics Platform",
     subtitle: "Landing page template",
     technologies: [
-      {
-        name: "Vue",
-        icon: (
-          <VueSVG
-            color="#61DAFB"
-            size={16}
-          />
-        ),
-      },
-
-      {
-        name: "TypeScript",
-        icon: (
-          <TypescriptSVG
-            color="#3178C6"
-            size={16}
-          />
-        ),
-      },
-      {
-        name: "Shadcn-Vue",
-        icon: (
-          <ShadcnSVG
-            color="#000000"
-            size={16}
-          />
-        ),
-      },
-      {
-        name: "Tailwind",
-        icon: (
-          <TailwindSVG
-            color="#06B6D4"
-            size={16}
-          />
-        ),
-      },
-    ],
-    description:
-      "Vue.js-powered landing page with all the essentials to showcase your product, service, or event. Enjoy a fully responsive, customizable, dark mode-enabled experience with optimized meta tags and an intuitive user interface.",
-    imgUrl:
-      "https://res.cloudinary.com/dbzv9xfjp/image/upload/v1723499276/og-images/shadcn-vue-landing.jpg",
-    videoUrl: "",
-    githubUrl: "https://github.com/leoMirandaa/shadcn-vue-landing-page.git",
-    websiteUrl: "https://shadcn-vue-landing-page.vercel.app/",
-  },
-  {
-    icon: <ShadcnLandingSVG />,
-    title: "Shadcn Landing page",
-    subtitle: "Landing page template",
-    technologies: [
-      {
-        name: "React",
-        icon: (
-          <ReactSVG
-            color="#61DAFB"
-            size={16}
-          />
-        ),
-      },
-
-      {
-        name: "TypeScript",
-        icon: (
-          <TypescriptSVG
-            color="#3178C6"
-            size={16}
-          />
-        ),
-      },
-      {
-        name: "Shadcn",
-        icon: (
-          <ShadcnSVG
-            color="#000000"
-            size={16}
-          />
-        ),
-      },
-      {
-        name: "Tailwind",
-        icon: (
-          <TailwindSVG
-            color="#06B6D4"
-            size={16}
-          />
-        ),
-      },
-    ],
-    description:
-      "Landing page  with essential sections to promote a particular product, service, event, or offer. It is fully responsive, customizable, has dark mode, meta tags and user-friendly interface.",
-    imgUrl: "/videos/shadcn-landing-page.webp",
-    videoUrl: "/videos/shadcn-landing-page.mp4",
-    githubUrl: "https://github.com/leoMirandaa/shadcn-landing-page.git",
-    websiteUrl: "https://shadcn-landing-page.vercel.app/",
-  },
-  {
-    icon: <MagentaKitchenSVG />,
-    title: "Magenta Kitchen",
-    subtitle: "Restaurant Menu",
-    technologies: [
-      {
-        name: "React",
-        icon: (
-          <ReactSVG
-            color="#61DAFB"
-            size={16}
-          />
-        ),
-      },
       {
         name: "Next js",
-        icon: (
-          <NextSVG
-            color="#000"
-            size={16}
-          />
-        ),
+        icon: <NextSVG color="#61DAFB" size={16} />,
+      },
+
+      {
+        name: "Javascript",
+        icon: <JavascriptSVG color="#3178C6" size={16} />,
       },
       {
         name: "CSS Modules",
-        icon: (
-          <CSSSVG
-            color="#1572B6"
-            size={16}
-          />
-        ),
+        icon: <CSSSVG color="#1572B6" size={16} />,
       },
       {
-        name: "Antd",
-        icon: (
-          <AntdSVG
-            color="#1d93ff"
-            size={16}
-          />
-        ),
-      },
-    ],
-    description:
-      "Restaurant menu created with the purpose to have an elegant digital menu, with the capability to use it with QR code and show the elemental restaurant information and all the dishes available.",
-    imgUrl: "/videos/magenta.webp",
-    videoUrl: "/videos/magenta.mp4",
-    githubUrl: "https://github.com/leomirandaa/restaurant-menu.git",
-    websiteUrl: "https://magentakitchen.vercel.app/",
-  },
-  {
-    icon: <Sk8terSVG />,
-    title: "Sk8ter",
-    subtitle: "E-commerce",
-    technologies: [
-      {
-        name: "JavaScript",
-        icon: (
-          <JavascriptSVG
-            color="#F7DF1E"
-            size={16}
-          />
-        ),
-      },
-      {
-        name: "React",
-        icon: (
-          <ReactSVG
-            color="#61DAFB"
-            size={16}
-          />
-        ),
-      },
-      {
-        name: "TypeScript",
-        icon: (
-          <TypescriptSVG
-            color="#3178C6"
-            size={16}
-          />
-        ),
-      },
-      {
-        name: "Sass",
-        icon: (
-          <SassSVG
-            color="#CC6699"
-            size={16}
-          />
-        ),
-      },
-
-      {
-        name: "Prime React",
-        icon: (
-          <PrimeReactSVG
-            color="#06B6D4"
-            size={16}
-          />
-        ),
-      },
-      {
-        name: "React Hook Form",
-        icon: (
-          <ReactHookFormSVG
-            color="#EC5990"
-            size={16}
-          />
-        ),
-      },
-    ],
-    description:
-      "Dynamic e-commerce web system selling skateboards in a friendly and intuitive interface. The system has authentication, a dashboard and also dark mode.",
-    imgUrl: "/videos/sk8ter.webp",
-    videoUrl: "/videos/sk8ter.mp4",
-    githubUrl: "https://github.com/leoMirandaa/sk8ter-shop",
-    websiteUrl: "",
-  },
-  {
-    icon: <ShopApiSVG />,
-    title: "Shop API",
-    subtitle: "E-commerse back-end",
-    technologies: [
-      {
-        name: "JavaScript",
-        icon: (
-          <JavascriptSVG
-            color="#F7DF1E"
-            size={16}
-          />
-        ),
-      },
-      {
-        name: "TypeScript",
-        icon: (
-          <TypescriptSVG
-            color="#3178C6"
-            size={16}
-          />
-        ),
+        name: "Tailwind",
+        icon: <TailwindSVG color="#000000" size={16} />,
       },
       {
         name: "Express",
-        icon: (
-          <ExpressSVG
-            color="#000000"
-            size={16}
-          />
-        ),
+        icon: <ExpressSVG color="#06B6D4" size={16} />,
       },
       {
         name: "MongoDB",
-        icon: (
-          <MongoDBSVG
-            color="#47A248"
-            size={16}
-          />
-        ),
-      },
-      {
-        name: "Mongoose",
-        icon: (
-          <MongooseSVG
-            color="#880000"
-            size={16}
-          />
-        ),
-      },
-      {
-        name: "Swagger",
-        icon: (
-          <SwaggerSVG
-            color="#85EA2D"
-            size={16}
-          />
-        ),
+        icon: <MongoDBSVG color="#06B6D4" size={16} />,
       },
     ],
     description:
-      "Backed e-commerce project that allows to manage users, categories, coupons and products with the endpoints ready to play with. Includes swagger docs.",
-    imgUrl: "/videos/shop-api.webp",
-    videoUrl: "",
-    githubUrl: "https://github.com/leomirandaa/shop-API.git",
-    websiteUrl: "NONE",
+      "A full-stack event attendance system where students can register for multiple events with enforced track constraints. The platform uses QR codes for attendance tracking and implements role-based access control, allowing super admins to manage events and administrators while limiting sub-admins to attendance scanning.",
+    imgUrl: "/videos/shadcn-landing-page.webp",
+    videoUrl: "/videos/Smart_Attendance.mp4",
+    githubUrl: "https://github.com/devyinka/NihubAttendance",
+    websiteUrl: "",
+  },
+  {
+    icon: <MagentaKitchenSVG />,
+    title: "Restuarant Locator",
+    subtitle: "Restaurant finder",
+    technologies: [
+      {
+        name: "React native",
+        icon: <ReactnativeSVG color="#61DAFB" size={16} />,
+      },
+      {
+        name: "Express",
+        icon: <ExpressSVG color="#000" size={16} />,
+      },
+
+      {
+        name: "MongoDB",
+        icon: <MongoDBSVG color="#1572B6" size={16} />,
+      },
+    ],
+    description:
+      "A React Native app that helps users find restaurants around a specific location by entering a place name. It fetches location coordinates using TomTom API and identifies nearby restaurants with Node Geocoder, displaying ratings, open/closed status, and other helpful details.",
+    imgUrl: "/videos/magenta.webp",
+    videoUrl: "/videos/Resturant.mp4",
+    githubUrl: "https://github.com/devyinka/Restaurant-finder",
+    websiteUrl: "",
+  },
+  {
+    icon: <MagentaKitchenSVG />,
+    title: "Food Ingredient Finder",
+    subtitle: "Recipe Finder",
+    technologies: [
+      {
+        name: "JavaScript",
+        icon: <JavascriptSVG color="#F7DF1E" size={16} />,
+      },
+      {
+        name: "React",
+        icon: <ReactSVG color="#61DAFB" size={16} />,
+      },
+      {
+        name: "CSS Modules",
+        icon: <CSSSVG color="#1572B6" size={16} />,
+      },
+    ],
+    description:
+      "A React recipe discovery web application that allows users to search for meals and view ingredients and cooking instructions through a clean and intuitive interface..",
+    imgUrl: "/videos/sk8ter.webp",
+    videoUrl: "/videos/Recipe-finder.mp4",
+    githubUrl: "https://github.com/devyinka/Recipe-App",
+    websiteUrl: "",
   },
 ];

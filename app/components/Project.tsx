@@ -65,16 +65,13 @@ export const Project = (project: ProjectType) => {
           <div className=" flex flex-wrap gap-2">
             {technologies.map(
               ({ name, icon }: TechnologyType, index: number) => (
-                <Chip
-                  key={`technology-item-${index}`}
-                  size="sm"
-                >
+                <Chip key={`technology-item-${index}`} size="sm">
                   <span className="flex items-center gap-2">
                     {/* {icon} */}
                     {name}
                   </span>
                 </Chip>
-              )
+              ),
             )}
           </div>
         </CardBody>

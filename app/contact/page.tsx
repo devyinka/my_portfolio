@@ -4,7 +4,6 @@ import Link from "next/link";
 
 import { Button } from "@nextui-org/button";
 import { Card, CardBody } from "@nextui-org/card";
-
 import { contactData } from "@/app/utils";
 import { Form } from "../components/Form";
 import { MailSVG, GithubSVG, XSVG, LinkedInSVG } from "../components/ui/icons/";

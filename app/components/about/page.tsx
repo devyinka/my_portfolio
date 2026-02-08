@@ -38,7 +38,7 @@ export default function About() {
             alt="Sodiq photo"
             width={90}
             height={90}
-            className="w-24 h-24 text-large brightness-90 rounded-full object-cover"
+            className="w-24 h-24 text-large brightness-90 rounded-full object-cover object-[center_30%]"
           />
           <h1 className="text-4xl font-bold">{fullName}</h1>
 
@@ -97,6 +97,7 @@ export default function About() {
             width: "100%",
             height: "100%",
             objectFit: "cover",
+            objectPosition: "center 30%",
             borderRadius: "15px",
           }}
         />

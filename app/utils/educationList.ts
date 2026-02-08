@@ -5,7 +5,7 @@ export const educationList: educationType[] = [
     career: "Self-Taught Full Stack Developer",
     years: "2022 - Present",
     description:
-      "Independently mastered Next.js, React, and Tailwind CSS by building real-world projects and reading documentation.",
+      "Built complex, deployable applications from scratch. Focused on modern web architecture, database management, and best practices in software design.",
   },
   {
     career: "B.Eng. in Telecommunication Engineering",

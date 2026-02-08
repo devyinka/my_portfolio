@@ -48,8 +48,8 @@ export const Home = () => {
             src="/salam.jpg"
             alt="Sodiq photo"
             width={96}
-            height={96}
-            className="w-24 h-24 text-large brightness-90 rounded-full object-cover"
+            height={80}
+            className="w-24 h-24 text-large brightness-90 rounded-full object-cover object-[center_30%]"
           />
           <h1 className="text-4xl font-bold">{fullName}</h1>
 
@@ -108,6 +108,7 @@ export const Home = () => {
             width: "100%",
             height: "100%",
             objectFit: "cover",
+            objectPosition: "center 30%",
             borderRadius: "15px",
           }}
         />
