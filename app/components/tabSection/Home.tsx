@@ -73,7 +73,7 @@ export const Home = () => {
       </Card>
 
       <Card className="hidden lg:flex col-span-2 lg:row-start-3 lg:row-span-1 lg:col-start-3 lg:col-span-1 bg-blue opacity-0 mobile-animation quoteCard">
-        <CardBody className="justify-center items-center lg:row-start-2 lg:col-start-4">
+        <CardBody className="justify-center items-center lg:row-start-2 lg:col-start-4 py-1">
           <div className="text-3xl font-bold text-center">
             &#34;{quote}&#34;
           </div>
