@@ -80,7 +80,7 @@ export const ProjectList: ProjectType[] = [
       },
     ],
     description:
-      "A React Native app that helps users find restaurants around a specific location by entering a place name. It fetches location coordinates using TomTom API and identifies nearby restaurants with Node Geocoder, displaying ratings, open/closed status, and other helpful details.",
+      "A Full-Stack React Native app that helps users find restaurants around a specific location by entering a place name. It fetches location coordinates using TomTom API and identifies nearby restaurants with Node Geocoder, displaying ratings, open/closed status, and other helpful details. The app features secure user authentication using Firebase, enabling users to create accounts, save favorite restaurants, and personalize their dining preferences seamlessly across devices.",
     imgUrl: "/videos/magenta.webp",
     videoUrl: "/videos/Resturant.mp4",
     githubUrl: "https://github.com/devyinka/Restaurant-finder",

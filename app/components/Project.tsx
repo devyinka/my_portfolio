@@ -56,7 +56,7 @@ export const Project = (project: ProjectType) => {
       </div>
 
       <Card className="col-span-full lg:row-start-1 lg:row-end-3 lg:col-start-3 lg:col-end-5 lg:min-h-[250px] opacity-0 mobile-animation descriptionCard">
-        <CardBody className="text-gray-400 text-lg flex justify-between gap-4">
+        <CardBody className="text-gray-400 text-lg flex flex-col justify-start gap-4">
           <div className="hidden lg:flex col-span-full lg:row-start-1 lg:row-end-2 lg:col-start-1 lg:col-end-5 text-3xl font-bold text-white opacity-0 mobile-animation titleSection">
             <span className="bg-[#303036] p-2 rounded-md mr-2"> {icon}</span>{" "}
             {title}
