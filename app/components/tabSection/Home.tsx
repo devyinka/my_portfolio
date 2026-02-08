@@ -41,7 +41,7 @@ export const Home = () => {
   }, []);
 
   return (
-    <div className="grid grid-rows-8 grid-cols-4 lg:grid-cols-3 gap-5">
+    <div className="grid grid-rows-8 grid-cols-4 lg:grid-cols-3 gap-3">
       <Card className="col-span-full lg:row-start-2 lg:row-span-2 lg:col-start-2 lg:col-span-1">
         <CardBody className="flex-col items-center justify-center gap-2">
           <Image
