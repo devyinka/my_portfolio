@@ -74,7 +74,7 @@ export const Project = (project: ProjectType) => {
         </CardBody>
       </Card>
 
-      <div className="grid grid-cols-2 gap-4 lg:col-start-2">
+      <div className="grid grid-cols-2 gap-6 lg:col-start-2">
         <Card
           isHoverable
           className={`${
