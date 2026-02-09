@@ -52,70 +52,72 @@ export const Project = (project: ProjectType) => {
         </div>
       </div>
 
-      <Card className="opacity-0 mobile-animation descriptionCard">
-        <CardBody className="text-gray-400 text-lg flex flex-col justify-start gap-4">
-          <div className="hidden lg:flex text-3xl font-bold text-white opacity-0 mobile-animation titleSection">
-            <span className="bg-[#303036] p-2 rounded-md mr-2"> {icon}</span>{" "}
-            {title}
-          </div>
-          {description}
-          <div className=" flex flex-wrap gap-2">
-            {technologies.map(
-              ({ name, icon }: TechnologyType, index: number) => (
-                <Chip key={`technology-item-${index}`} size="sm">
-                  <span className="flex items-center gap-2">
-                    {/* {icon} */}
-                    {name}
-                  </span>
-                </Chip>
-              ),
-            )}
-          </div>
-        </CardBody>
-      </Card>
-
-      <div className="grid grid-cols-2 gap-4 lg:col-start-2">
-        <Card
-          isHoverable
-          className={`${
-            websiteUrl === "NONE" ? "hidden" : "col-span-1"
-          } opacity-0 mobile-animation githubUrlCard`}
-        >
-          <Link
-            href={websiteUrl}
-            rel="noopener noreferrer"
-            target="_blank"
-            className="min-h-full flex justify-center items-center"
-          >
-            <CardBody className="justify-center items-center">
-              {!websiteUrl ? (
-                <h2 className="font-bold text-xl text-gray-400 text-center">
-                  Coming Soon!
-                </h2>
-              ) : (
-                <LinkSVG />
+      <div className="flex flex-col gap-4 lg:col-start-2">
+        <Card className="opacity-0 mobile-animation descriptionCard">
+          <CardBody className="text-gray-400 text-lg flex flex-col justify-start gap-4">
+            <div className="hidden lg:flex text-3xl font-bold text-white opacity-0 mobile-animation titleSection">
+              <span className="bg-[#303036] p-2 rounded-md mr-2"> {icon}</span>{" "}
+              {title}
+            </div>
+            {description}
+            <div className=" flex flex-wrap gap-2">
+              {technologies.map(
+                ({ name, icon }: TechnologyType, index: number) => (
+                  <Chip key={`technology-item-${index}`} size="sm">
+                    <span className="flex items-center gap-2">
+                      {/* {icon} */}
+                      {name}
+                    </span>
+                  </Chip>
+                ),
               )}
-            </CardBody>
-          </Link>
+            </div>
+          </CardBody>
         </Card>
 
-        <Card
-          isHoverable
-          className={`${
-            websiteUrl === "NONE" ? "col-span-2" : "col-span-1"
-          } opacity-0 mobile-animation websiteUrlCard`}
-        >
-          <Link
-            href={githubUrl}
-            rel="noopener noreferrer"
-            target="_blank"
-            className="min-h-full flex justify-center items-center"
+        <div className="grid grid-cols-2 gap-4">
+          <Card
+            isHoverable
+            className={`${
+              websiteUrl === "NONE" ? "hidden" : "col-span-1"
+            } opacity-0 mobile-animation githubUrlCard`}
           >
-            <CardBody className="justify-center items-center">
-              <GithubSVG />
-            </CardBody>
-          </Link>
-        </Card>
+            <Link
+              href={websiteUrl}
+              rel="noopener noreferrer"
+              target="_blank"
+              className="min-h-full flex justify-center items-center"
+            >
+              <CardBody className="justify-center items-center">
+                {!websiteUrl ? (
+                  <h2 className="font-bold text-xl text-gray-400 text-center">
+                    Coming Soon!
+                  </h2>
+                ) : (
+                  <LinkSVG />
+                )}
+              </CardBody>
+            </Link>
+          </Card>
+
+          <Card
+            isHoverable
+            className={`${
+              websiteUrl === "NONE" ? "col-span-2" : "col-span-1"
+            } opacity-0 mobile-animation websiteUrlCard`}
+          >
+            <Link
+              href={githubUrl}
+              rel="noopener noreferrer"
+              target="_blank"
+              className="min-h-full flex justify-center items-center"
+            >
+              <CardBody className="justify-center items-center">
+                <GithubSVG />
+              </CardBody>
+            </Link>
+          </Card>
+        </div>
       </div>
     </div>
   );
