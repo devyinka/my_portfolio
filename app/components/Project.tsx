@@ -33,7 +33,7 @@ export const Project = (project: ProjectType) => {
   }, []);
 
   return (
-    <div className="grid gap-6 pb-4 overflow-hidden lg:grid-cols-2 lg:items-start">
+    <div className="grid gap-6 overflow-hidden lg:grid-cols-2 lg:items-start">
       <div className="flex lg:hidden items-center text-3xl font-bold text-white opacity-0 mobile-animation titleSection">
         <span className="bg-[#303036] p-2 rounded-md mr-2"> {icon}</span>
         {title}
