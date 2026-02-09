@@ -10,7 +10,7 @@ const whoAmIAnimation = () => {
         opacity: [0, 0.2, 0.8, 1],
         transform: ["translateX(-100px) ", "none"],
       },
-      { duration: 0.5, delay: 0.1 }
+      { duration: 0.5, delay: 0.1 },
     );
   });
 };
@@ -25,7 +25,7 @@ const verticalImageAnimation = () => {
         opacity: [0, 0.2, 0.8, 1],
         transform: ["translateY(-100px) ", "none"],
       },
-      { duration: 0.5, delay: 0.2 }
+      { duration: 0.5, delay: 0.2 },
     );
   });
 };
@@ -40,7 +40,7 @@ const educationContentAnimation = () => {
         opacity: [0, 0.2, 0.8, 1],
         transform: ["translateX(100px) ", "none"],
       },
-      { duration: 0.5, delay: 0.3 }
+      { duration: 0.5, delay: 0.3 },
     );
   });
 };
@@ -55,7 +55,7 @@ const techonologyIconListAnimation = () => {
         opacity: [0, 0.2, 0.8, 1],
         transform: ["translateY(100px) ", "none"],
       },
-      { duration: 0.5, delay: 0.4 }
+      { duration: 0.5, delay: 0.4 },
     );
   });
 };
@@ -70,7 +70,7 @@ const professionAnimation = () => {
         opacity: [0, 0.2, 0.8, 1],
         transform: ["translateX(-100px) ", "none"],
       },
-      { duration: 0.5, delay: 0.5 }
+      { duration: 0.5, delay: 0.5 },
     );
   });
 };
@@ -85,7 +85,7 @@ const quoteAnimation = () => {
         opacity: [0, 0.2, 0.8, 1],
         transform: ["translateX(100px) ", "none"],
       },
-      { duration: 0.5, delay: 0.5 }
+      { duration: 0.5, delay: 0.5 },
     );
   });
 };
@@ -96,7 +96,7 @@ const mobileAnimation = () => {
   });
 };
 
-export default {
+const aboutSectionAnimations = {
   whoAmIAnimation,
   professionAnimation,
   quoteAnimation,
@@ -105,3 +105,5 @@ export default {
   educationContentAnimation,
   mobileAnimation,
 };
+
+export default aboutSectionAnimations;

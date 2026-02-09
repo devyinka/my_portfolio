@@ -33,31 +33,28 @@ export const Project = (project: ProjectType) => {
   }, []);
 
   return (
-    <div className="grid grid-rows-8 grid-cols-4 gap-5 pb-4 overflow-hidden">
-      <div className="flex lg:hidden items-center col-span-full lg:row-start-1 lg:row-end-2 lg:col-start-1 lg:col-end-5 text-3xl font-bold text-white opacity-0 mobile-animation titleSection">
+    <div className="grid gap-6 pb-4 overflow-hidden lg:grid-cols-2 lg:items-start">
+      <div className="flex lg:hidden items-center text-3xl font-bold text-white opacity-0 mobile-animation titleSection">
         <span className="bg-[#303036] p-2 rounded-md mr-2"> {icon}</span>
         {title}
       </div>
 
-      <div className="col-span-full lg:row-start-1 lg:row-end-4 lg:col-start-1 lg:col-end-3 opacity-0 mobile-animation videoSection">
-        <video
-          className="rounded-xl  border-1 border-[#212121]"
-          style={{
-            width: "100%",
-            height: "100%",
-            objectFit: "cover",
-          }}
-          autoPlay
-          loop
-          playsInline
-          poster={imgUrl}
-          src={videoUrl}
-        ></video>
+      <div className="opacity-0 mobile-animation videoSection">
+        <div className="w-full overflow-hidden rounded-xl border-1 border-[#212121] aspect-video">
+          <video
+            className="h-full w-full object-cover"
+            autoPlay
+            loop
+            playsInline
+            poster={imgUrl}
+            src={videoUrl}
+          ></video>
+        </div>
       </div>
 
-      <Card className="col-span-full lg:row-start-1 lg:row-end-3 lg:col-start-3 lg:col-end-5 lg:min-h-[250px] opacity-0 mobile-animation descriptionCard">
+      <Card className="opacity-0 mobile-animation descriptionCard">
         <CardBody className="text-gray-400 text-lg flex flex-col justify-start gap-4">
-          <div className="hidden lg:flex col-span-full lg:row-start-1 lg:row-end-2 lg:col-start-1 lg:col-end-5 text-3xl font-bold text-white opacity-0 mobile-animation titleSection">
+          <div className="hidden lg:flex text-3xl font-bold text-white opacity-0 mobile-animation titleSection">
             <span className="bg-[#303036] p-2 rounded-md mr-2"> {icon}</span>{" "}
             {title}
           </div>
@@ -77,49 +74,49 @@ export const Project = (project: ProjectType) => {
         </CardBody>
       </Card>
 
-      <Card
-        isHoverable
-        className={`${
-          websiteUrl === "NONE" && "hidden"
-        } col-span-2 lg:row-start-3 lg:row-end-4 lg:col-start-3 lg:h-24 lg:col-end-4 opacity-0 mobile-animation githubUrlCard`}
-      >
-        <Link
-          href={websiteUrl}
-          rel="noopener noreferrer"
-          target="_blank"
-          className="min-h-full flex justify-center items-center"
+      <div className="grid grid-cols-2 gap-4 lg:col-start-2">
+        <Card
+          isHoverable
+          className={`${
+            websiteUrl === "NONE" ? "hidden" : "col-span-1"
+          } opacity-0 mobile-animation githubUrlCard`}
         >
-          <CardBody className="justify-center items-center">
-            {!websiteUrl ? (
-              <h2 className="font-bold text-xl text-gray-400 text-center">
-                Coming Soon!
-              </h2>
-            ) : (
-              <LinkSVG />
-            )}
-          </CardBody>
-        </Link>
-      </Card>
+          <Link
+            href={websiteUrl}
+            rel="noopener noreferrer"
+            target="_blank"
+            className="min-h-full flex justify-center items-center"
+          >
+            <CardBody className="justify-center items-center">
+              {!websiteUrl ? (
+                <h2 className="font-bold text-xl text-gray-400 text-center">
+                  Coming Soon!
+                </h2>
+              ) : (
+                <LinkSVG />
+              )}
+            </CardBody>
+          </Link>
+        </Card>
 
-      <Card
-        isHoverable
-        className={`${
-          websiteUrl === "NONE"
-            ? "lg:col-start-3 col-span-4"
-            : "lg:col-start-4 col-span-2"
-        }  lg:row-start-3 lg:row-end-4 lg:h-24 lg:col-end-5 opacity-0 mobile-animation websiteUrlCard`}
-      >
-        <Link
-          href={githubUrl}
-          rel="noopener noreferrer"
-          target="_blank"
-          className="min-h-full flex justify-center items-center"
+        <Card
+          isHoverable
+          className={`${
+            websiteUrl === "NONE" ? "col-span-2" : "col-span-1"
+          } opacity-0 mobile-animation websiteUrlCard`}
         >
-          <CardBody className="justify-center items-center">
-            <GithubSVG />
-          </CardBody>
-        </Link>
-      </Card>
+          <Link
+            href={githubUrl}
+            rel="noopener noreferrer"
+            target="_blank"
+            className="min-h-full flex justify-center items-center"
+          >
+            <CardBody className="justify-center items-center">
+              <GithubSVG />
+            </CardBody>
+          </Link>
+        </Card>
+      </div>
     </div>
   );
 };
