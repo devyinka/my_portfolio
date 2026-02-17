@@ -60,6 +60,7 @@ export const ProjectList: ProjectType[] = [
     githubUrl: "https://github.com/devyinka/NihubAttendance",
     websiteUrl: "https://nihub-attendance-vnqh.vercel.app",
   },
+
   {
     icon: <MagentaKitchenSVG />,
     title: "Restuarant Locator",
